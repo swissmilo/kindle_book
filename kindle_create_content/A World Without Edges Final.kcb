@@ -1,0 +1,28 @@
+{
+   "book_state" : {
+      "book_input_type" : 3,
+      "book_manga_comic" : false,
+      "book_reading_direction" : 0,
+      "book_target_type" : 2,
+      "book_virtual_panelmovement" : 0
+   },
+   "content_hash" : null,
+   "metadata" : {
+      "book_path" : "resources",
+      "edited_tool_versions" : [ "1.96.0.0" ],
+      "format" : "yj",
+      "global_styling" : false,
+      "id" : "f3cb224c-11d9-4df8-96fc-1a4ce73dda0b",
+      "platform" : "mac",
+      "tool_name" : "KC",
+      "tool_version" : "1.96.0.0"
+   },
+   "tool_data" : {
+      "cache_path" : "resources/.cache",
+      "created_on" : "2025-Jan-16 14:28:55",
+      "last_modified_time" : "2025-Jan-22 14:33:36",
+      "link_extract_choice" : false,
+      "link_notification_preference" : true
+   }
+}
+

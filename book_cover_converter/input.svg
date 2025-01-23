@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2560">
+  <!-- Previous defs and elements remain the same until the text -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000610;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#0a1128;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1040;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="auroraGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="20" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.9 0"/>
+    </filter>
+    
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="25" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+    </filter>
+
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.8 0"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#skyGradient)"/>
+  
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="200" cy="300" r="1" opacity="0.5"/>
+    <circle cx="400" cy="200" r="1.5" opacity="0.7"/>
+    <circle cx="1200" cy="400" r="1" opacity="0.6"/>
+    <circle cx="1400" cy="300" r="1.5" opacity="0.5"/>
+    <circle cx="600" cy="500" r="1" opacity="0.7"/>
+    <circle cx="900" cy="200" r="1" opacity="0.6"/>
+    <circle cx="1100" cy="600" r="1.5" opacity="0.5"/>
+  </g>
+
+  <!-- Aurora layers -->
+  <path d="M-200,400 Q400,200 800,400 T1800,300" 
+        stroke="#26ffcf" 
+        stroke-width="150" 
+        fill="none" 
+        opacity="0.4" 
+        filter="url(#strongGlow)"/>
+  
+  <path d="M-100,600 Q500,400 900,600 T1900,500" 
+        stroke="#59ffef" 
+        stroke-width="100" 
+        fill="none" 
+        opacity="0.3" 
+        filter="url(#auroraGlow)"/>
+        
+  <path d="M-300,800 Q300,600 700,800 T1700,700" 
+        stroke="#a0fff7" 
+        stroke-width="120" 
+        fill="none" 
+        opacity="0.25" 
+        filter="url(#auroraGlow)"/>
+
+  <!-- NYC Skyline -->
+  <g fill="#000000">
+    <path d="M700,1900 L700,1750 L720,1700 L740,1750 L740,1900" />
+    <path d="M900,1900 L900,1650 L920,1600 L940,1650 L940,1900" />
+    <path d="M500,1900 L500,1780 L520,1700 L540,1780 L540,1900" />
+    <rect x="300" y="1800" width="40" height="100"/>
+    <rect x="400" y="1820" width="40" height="80"/>
+    <rect x="600" y="1840" width="40" height="60"/>
+    <rect x="800" y="1820" width="40" height="80"/>
+    <rect x="1000" y="1840" width="40" height="60"/>
+    <rect x="1100" y="1800" width="40" height="100"/>
+    <rect x="1200" y="1830" width="40" height="70"/>
+    <rect x="0" y="1900" width="1600" height="660" fill="#000000" opacity="0.8"/>
+  </g>
+
+  <!-- Title -->
+  <g filter="url(#textGlow)">
+    <text x="800" y="1000" 
+          font-family="Helvetica Neue, sans-serif" 
+          font-size="180" 
+          font-weight="100" 
+          fill="white" 
+          text-anchor="middle" 
+          letter-spacing="40" 
+          opacity="0.95">
+      A WORLD
+    </text>
+    
+    <text x="800" y="1250" 
+          font-family="Helvetica Neue, sans-serif" 
+          font-size="200" 
+          font-weight="100" 
+          fill="white" 
+          text-anchor="middle" 
+          letter-spacing="30" 
+          opacity="0.95">
+      WITHOUT
+    </text>
+    
+    <text x="800" y="1500" 
+          font-family="Helvetica Neue, sans-serif" 
+          font-size="200" 
+          font-weight="100" 
+          fill="white" 
+          text-anchor="middle" 
+          letter-spacing="30" 
+          opacity="0.95">
+      EDGES
+    </text>
+  </g>
+
+  <!-- Author name - now moved lower and matching title style -->
+  <text x="800" y="2400" 
+        font-family="Helvetica Neue, sans-serif" 
+        font-size="90" 
+        font-weight="100" 
+        fill="white" 
+        text-anchor="middle" 
+        letter-spacing="30" 
+        opacity="0.8">
+    MILO SPIRIG
+  </text>
+</svg>
