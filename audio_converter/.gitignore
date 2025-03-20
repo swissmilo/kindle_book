@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Dependencies
+node_modules/
+
+# Output files
+output/
+
+# OS files
+.DS_Store 
